@@ -100,5 +100,8 @@ public final class AndroidClassNames {
   public static final ClassName DEFAULT_VIEW_MODEL_FACTORIES =
       get("dagger.hilt.android.internal.lifecycle", "DefaultViewModelFactories");
 
+  public static final ClassName ON_CONTEXT_AVAILABLE_LISTENER =
+      get("androidx.activity.contextaware", "OnContextAvailableListener");
+
   private AndroidClassNames() {}
 }

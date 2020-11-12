@@ -73,9 +73,9 @@ maven_install(
     artifacts = [
         "androidx.annotation:annotation:1.1.0",
         "androidx.appcompat:appcompat:1.2.0",
-        "androidx.activity:activity:1.1.0",
-        "androidx.fragment:fragment:1.2.5",
-        "androidx.lifecycle:lifecycle-viewmodel:2.2.0",
+        "androidx.activity:activity:1.2.0-beta01",
+        "androidx.fragment:fragment:1.3.0-beta01",
+        "androidx.lifecycle:lifecycle-viewmodel:2.3.0-beta01",
         "androidx.multidex:multidex:2.0.1",
         "androidx.test:monitor:1.1.1",
         "androidx.test:core:1.1.0",
