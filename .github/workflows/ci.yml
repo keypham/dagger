@@ -37,6 +37,9 @@ jobs:
     name: 'Artifact local tests'
     needs: bazel-test
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java: [ 7, 8, 11 ]
     steps:
     - name: 'Check out repository'
       uses: actions/checkout@v2

@@ -19,6 +19,9 @@ package dagger.example.gradle.simple;
 import dagger.Component;
 import dagger.Module;
 import dagger.Provides;
+import dagger.assisted.Assisted;
+import dagger.assisted.AssistedFactory;
+import dagger.assisted.AssistedInject;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
@@ -26,6 +29,21 @@ import javax.inject.Singleton;
 public class SimpleApplication {
   static final class Foo {
     @Inject Foo() {}
+  }
+
+  @Component
+  interface MyComponent {
+    MyFactory factory();
+  }
+
+  static class MyPresenter {
+    @AssistedInject
+    MyPresenter(@Assisted String str) {}
+  }
+
+  @AssistedFactory
+  interface MyFactory {
+      MyPresenter create(String str);
   }
 
   @Module
